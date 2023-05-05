@@ -55,19 +55,19 @@ RM		= rm -f
 CFLAGS	= -Wall -Wextra -Werror
 
 
-${NAME}: ${OBJS}
-	${LIBC} ${NAME} ${OBJS}
-
 all: ${NAME}
 
+$(NAME): ${OBJS}
+	${LIBC} $(NAME) ${OBJS}
+
 bonus: ${OBJS} ${OBJS_B}
-	${LIBC} ${NAME} ${OBJS_B}
+	${LIBC} $(NAME) ${OBJS_B}
 
 clean:
 	${RM} ${OBJS} ${OBJS_B}
 
 fclean: clean
-	${RM} ${NAME} $(bonus)
+	${RM} $(NAME) $(bonus)
 
 re: fclean all
 
