@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
+/*   By: djin <djin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 12:27:24 by sinlee            #+#    #+#             */
-/*   Updated: 2023/04/28 12:54:04 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/05/08 14:08:53 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 // {
 // 	char str1[50] = "Hello";
 // 	char str2[50] = "WorldHi";
-// 	ft_memmove(str1, str2, 3 * sizeof(char));
+// 	ft_memmove(str1, str2, 7 * sizeof(char));
 // 	printf("After memmove():  %s|\n", str1);
 // 	char str3[50] = "Hello";
 // 	char str4[50] = "WorldHi";

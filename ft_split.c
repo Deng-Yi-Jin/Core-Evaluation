@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sinlee <sinlee@student42.fr>               +#+  +:+       +#+        */
+/*   By: djin <djin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 14:51:39 by sinlee            #+#    #+#             */
-/*   Updated: 2023/05/05 15:15:30 by sinlee           ###   ########.fr       */
+/*   Updated: 2023/05/08 14:09:25 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (0);
 	str = (char *)s;
-	arr = (char **)malloc((count_strings(str, c) + 1) * 8);
+	arr = (char **)malloc((count_strings(str, c) + 1) * sizeof(void *));
 	while (*str)
 	{
 		while (*str && check_seperator(*str, c))
